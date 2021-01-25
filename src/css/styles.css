@@ -1,0 +1,92 @@
+html {
+  box-sizing: border-box;
+  width: 100vw;
+  /* overflow-x: hidden; */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: #000;
+  color: wheat;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  text-align: center;
+  font-family: Consolas;
+  font-size: 1em;
+}
+
+input{
+  padding-left: 1.5em;
+}
+
+button {
+  display: inline-block;
+  appearance: none;
+  margin-left: 0.5em;
+  padding: 0.5em 1em;
+  border: none;
+  color: rgb(14, 13, 13);
+  background-color: #fff;
+  font: inherit;
+  border-radius:0.25em;
+  cursor: pointer;
+  outline: none;
+}
+
+p {
+  margin: 0.5em;
+}
+
+.button.is-hidden {
+  display: none;
+}
+
+.button > .spinner.is-hidden {
+  display: none;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-gap: 10px;
+  margin-bottom: 1.5em;
+  /* padding: 4px; */
+  /* list-style: none; */
+}
+
+img {
+  display: flexbox;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(134, 104, 104);
+}
+
+.stats-item {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: fff;
+ 
+}
+
+.material-icons{
+  margin-right: 0.25em;
+}
