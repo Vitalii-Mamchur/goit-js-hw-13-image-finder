@@ -23,10 +23,19 @@ function onSearch(event) {
 
   apiServise.query = event.currentTarget.elements.query.value;
 
-  loadMoreBtn.show();
-  apiServise.resetPage();
-  clearPhotoContainer();
-  fetchHits();
+  if (apiService.query === '') {
+    alert({
+      title: 'enter request please',
+      delay: 2000,
+    });
+    return;
+  } else {
+    markupGalery();
+    loadMoreBtn.show();
+    apiServise.resetPage();
+    clearPhotoContainer();
+    fetchHits();
+  };
 }
 
 function fetchHits() {
