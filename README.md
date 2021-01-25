@@ -1,1 +1,1 @@
-# webpack_bundle
+https://vitalii-mamchur.github.io/goit-js-hw-13-image-finder/
